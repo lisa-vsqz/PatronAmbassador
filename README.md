@@ -1,2 +1,1 @@
-Para ejecutar, primero iniciar un contenedor de Docker
-comando en la termina: docker-compose up --build
+Para ejecutar, primero iniciar un contenedor de Docker. Comando en la terminal: docker-compose up --build
