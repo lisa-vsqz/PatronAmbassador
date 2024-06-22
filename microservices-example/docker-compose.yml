@@ -1,0 +1,17 @@
+version: '3'
+services:
+  python-service:
+    build: ./python-service
+    ports:
+      - "5000:5000"
+  node-service:
+    build: ./node-service
+    ports:
+      - "3000:3000"
+  ambassador-service:
+    build: ./ambassador-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - python-service
+      - node-service
